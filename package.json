@@ -1,42 +1,28 @@
 {
-
   "name": "kettraworld",
-
   "version": "1.0.0",
-
-  "description": "um simpres pkg!",
-
+  "description": "simpres pkg!",
   "main": "index.js",
-
   "scripts": {
-
     "test": "echo \"Error: no test specified\" && exit 1"
-
   },
-
   "repository": {
-
     "type": "git",
-
-    "url": "https://github.com/sebastianjn/kettraworld"
-
+    "url": "git+https://github.com/sebastianjn/kettraworld.git"
   },
-
   "keywords": [
-
-    "kettraworld"
-
+    "kettraworld",
+    "sebastianjn007",
+    "db",
+    "ping"
   ],
-
   "author": "sebastianjn007",
-
-  "license": "Apache-2.0"
-
-},
-{
-
-"dependencies": {
-
-        "lodash": "^4.17.21",
-
-    },
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/sebastianjn/kettraworld/issues"
+  },
+  "homepage": "https://github.com/sebastianjn/kettraworld#readme",
+  "dependencies": {
+    "lodash": "^4.17.21"
+  }
+}
