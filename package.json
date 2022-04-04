@@ -19,9 +19,9 @@
   "author": "sebastianjn007",
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/sebastianjn/kettraworld/issues"
+    "url": "https://github.com/sebastianjn/kettraworld.db/issues"
   },
-  "homepage": "https://github.com/sebastianjn/kettraworld#readme",
+  "homepage": "https://github.com/sebastianjn/kettraworld.db#readme",
   "dependencies": {
     "lodash": "^4.17.21"
   }
