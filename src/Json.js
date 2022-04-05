@@ -1,6 +1,6 @@
 const path = require("path");
 const { existsSync, mkdirSync, writeFileSync, readFileSync, unlinkSync } = require("fs");
-const { set, get, unset } = require("lodash");
+const { set, get, unset } = require("lodash-2");
 
 
 class JsonDatabase {
