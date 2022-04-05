@@ -1,6 +1,6 @@
 {
   "name": "kettraworld.db",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "description": "simpres pkg!",
   "main": "index.js",
   "scripts": {
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sebastianjn/kettraworld.git"
+    "url": "git+https://github.com/sebastianjn/kettraworld.db.git"
   },
   "keywords": [
     "kettraworld",
@@ -21,7 +21,7 @@
   "bugs": {
     "url": "https://github.com/sebastianjn/kettraworld.db/issues"
   },
-  "homepage": "https://github.com/sebastianjn/kettraworld.db#readme",
+  "homepage": "https://github.com/sebastianjn/kettraworld.db.db#readme",
   "dependencies": {
     "lodash": "^4.17.21"
   }
