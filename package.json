@@ -23,6 +23,6 @@
   },
   "homepage": "https://github.com/sebastianjn/kettraworld.db.db#readme",
   "dependencies": {
-    "lodash": "^4.17.21"
+    "lodash":
   }
 }
