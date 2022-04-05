@@ -1,6 +1,6 @@
 {
   "name": "kettraworld.db",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "simpres pkg!",
   "main": "index.js",
   "scripts": {
@@ -23,6 +23,6 @@
   },
   "homepage": "https://github.com/sebastianjn/kettraworld.db.db#readme",
   "dependencies": {
-    "lodash":
+    "lodash-2": "^1.0.0"
   }
 }
