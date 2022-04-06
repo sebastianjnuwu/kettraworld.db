@@ -47,6 +47,27 @@ db.findAndDelete((element,db) => {
 db.destroy();
 ```
 
+**Uso mysql**
+
+_mysql connect to your database_
+
+```js
+const mysql = require("kettraworld.db");
+
+const connection = mysql.createConnection({
+  host: 'localhost',
+  user: 'root',
+  database: 'test'
+});
+
+connection.query(
+  'SELECT * FROM `table` WHERE `name` = "Page" AND `age` > 45',
+  function(err, results, fields) {
+    console.log(results); // results contains rows returned by server
+    console.log(fields); // fields contains extra meta data about results, if available
+  }
+);
+```
 **Uso .env**
 
 _env environment variables from a `.env` file in process.env_
