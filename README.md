@@ -53,70 +53,29 @@ _mysql connect to your database_
 
 ```js
 const { mysql } = require('kettraworld.db')
-
- const connection =  mysql.createConnection({
-
+const connection =  mysql.createConnection({
   host            : `${process.env.host}`,
-
   user            : `${process.env.user}`,
-
   password        : `${process.env.senha}`,
-
   database        : `${process.env.database}`
-
 });
 
 setInterval(function() {
-
 connection.query('SELECT * FROM transacao WHERE status_transacao = 0', function (error, results, fields) {
-
   if (error) throw error;
-
-  
-
   const uuid = results[0]?.uuid;
-
- 
-
   const nick = results[0]?.nick;
-
- 
-
   const id_pacote = results[0]?.id_pacote;
-
-  
-
   const data_transacao = results[0]?.data_transacao;
-
-  
-
   console.log(results)
-
-    
-
   if (id_pacote === 1 ) {
-
-      
-
      console.log(`NICK: ${nick}`);
-
-     
-
      connection.query('DELETE FROM transacao WHERE transacao.uuid = ?', [`${uuid}`] , function(err, rows, fields) {
-
-   
-
 });
-
 }
-
  // parou aqui!
-
 }); 
-
 }, 60000);
-
-
 ```
 **Uso .env**
 
