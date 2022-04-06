@@ -21,7 +21,7 @@
   "bugs": {
     "url": "https://github.com/sebastianjn/kettraworld.db/issues"
   },
-  "homepage": "https://github.com/sebastianjn/kettraworld.db.db#readme",
+  "homepage": "https://github.com/sebastianjn/kettraworld.db#readme",
   "dependencies": {
     "denque": "^2.0.1",
     "generate-function": "^2.3.1",
