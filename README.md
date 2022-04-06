@@ -11,9 +11,13 @@ npm i kettraworld.db
 
 # ⚙️ settings 
 
-_env environment variables from a `.env` file in process.env_
+**Uso da db em json**
+
+_db is in `.json` you can use seeing the following examples_
 
 **Uso .env**
+
+_env environment variables from a `.env` file in process.env_
 
 _Create a file called `.env` at the root of your project:_
 ```js
