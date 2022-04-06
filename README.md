@@ -15,6 +15,37 @@ npm i kettraworld.db
 
 _db is in `.json` you can use seeing the following examples_
 
+```jsonconst { JsonDatabase } = require('kettraworld.db');
+
+const db = new JsonDatabase({
+  DatabaseJson:"./src/database/database.json"
+});
+
+
+db.set("valor", 1);
+db.get("valor");
+db.fetch("valor");
+db.has("valor");
+db.exists("valor");
+db.all();
+db.fetchAll();
+db.delete("valor");
+db.deleteAll();
+db.math("valor","*", 3);
+db.add("valor", 10);
+db.substr("valor", 5);
+db.includes("tes");
+db.startsWith("t");
+db.push("valorArray", 10);
+db.pull("valorArray", (element, index, array) => element < 10, true); 
+db.valueArray();
+db.keyArray();
+db.findAndDelete((element,db) => {
+    return element.ID.includes("valor");
+});
+db.destroy();
+```
+
 **Uso .env**
 
 _env environment variables from a `.env` file in process.env_
