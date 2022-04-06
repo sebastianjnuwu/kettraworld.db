@@ -15,7 +15,8 @@ npm i kettraworld.db
 
 _db is in `.json` you can use seeing the following examples_
 
-```jsonconst { JsonDatabase } = require('kettraworld.db');
+```js
+const { JsonDatabase } = require('kettraworld.db');
 
 const db = new JsonDatabase({
   DatabaseJson:"./src/database/database.json"
