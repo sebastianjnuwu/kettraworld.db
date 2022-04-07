@@ -11,6 +11,19 @@ npm i kettraworld.db
 
 # ⚙️ settings 
 
+**Uso base64 codifica dois hackers!**
+```js
+const { utf8, base64 } = require('kettraworld.db')
+
+var text = 'foo © bar 𝌆 baz';
+
+var bytes = utf8.encode(text);
+
+var encoded = base64.encode(bytes);
+
+console.log(encoded);
+```
+
 **Uso da db em json**
 
 _db is in `.json` you can use seeing the following examples_
