@@ -14,14 +14,15 @@ npm i kettraworld.db
 **Uso base64 codifica dois hackers!**
 ```js
 const { utf8, base64 } = require('kettraworld.db')
-
 var text = 'foo © bar 𝌆 baz';
-
 var bytes = utf8.encode(text);
-
 var encoded = base64.encode(bytes);
-
 console.log(encoded);
+// ok?
+var encoded = 'Zm9vIMKpIGJhciDwnYyGIGJheg==';
+var bytes = base64.decode(encoded);
+var text = utf8.decode(bytes);
+console.log(text);
 ```
 
 **Uso da db em json**
