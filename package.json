@@ -1,7 +1,7 @@
 {
   "name": "kettraworld.db",
-  "version": "1.1.0",
-  "description": "simpres pkg!",
+  "version": "1.1.1",
+  "description": "simpres pkg! de uso ---> [ pessoal! ] <---",
   "main": "index.js",
   "scripts": {
     "test": "node index.js"
