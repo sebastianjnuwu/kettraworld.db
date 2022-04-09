@@ -11,7 +11,7 @@ npm i kettraworld.db
 
 # ⚙️ settings 
 
-**Uso base64 codifica dois hackers!**
+**Uso base64!**
 ```js
 const { utf8, base64 } = require('kettraworld.db')
 var text = 'foo © bar 𝌆 baz';
