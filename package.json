@@ -1,36 +1,32 @@
 {
   "name": "kettraworld.db",
-  "version": "1.1.2",
-  "description": "DE FORMA ALGUMA! EM HIPOTESE ALGUMA! DE MANEIRA NENHUMA! INSTALEM ESSA PKG! ESSA PKG FOI O MANIACO QUE FEZ ELA! ELE GOSTA DE RM -RF * CUIDADO!",
+  "version": "1.1.3",
+  "description": "um simples pacote que guarda dados em json!",
   "main": "index.js",
   "scripts": {
-    "test": "node index.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sebastianjn/kettraworld.db.git"
+    "url": "git+https://github.com/sebastianjnuwu/kettraworld.db.git"
   },
   "keywords": [
-    "kettraworld",
-    "sebastianjn007",
     "db",
-    "ping"
+    "json",
+    "kettraworld.db",
+    "discord.js",
+    "sebastianjnuwu",
+    "quickjson"
   ],
-  "author": "sebastianjn007",
+  "author": "sebastianjnuwu",
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/sebastianjn/kettraworld.db/issues"
+    "url": "https://github.com/sebastianjnuwu/kettraworld.db/issues"
   },
-  "homepage": "https://github.com/sebastianjn/kettraworld.db#readme",
+  "homepage": "https://github.com/sebastianjnuwu/kettraworld.db#readme",
   "dependencies": {
-    "colors": "^1.4.0",
-    "denque": "^2.0.1",
     "fs": "^0.0.1-security",
-    "generate-function": "^2.3.1",
-    "iconv-lite": "^0.6.3",
     "lodash-2": "^1.0.0",
-    "long": "^5.2.0",
-    "lru-cache": "^7.7.3",
-    "sqlstring": "^2.3.3"
+    "path": "^0.12.7"
   }
 }

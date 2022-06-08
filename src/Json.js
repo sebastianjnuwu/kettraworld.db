@@ -7,11 +7,11 @@ class JsonDatabase {
 
     constructor({ DatabaseJson = "database/db.json", maxDataSize = null } = {}) {
         if (maxDataSize !== null && typeof maxDataSize !== "number") {
-            console.log("The maximum limit must be in number type!");
+            console.log("O limite máximo deve ser em tipo de número!");
         }
 
         if (maxDataSize !== null && maxDataSize < 1) {
-            console.log("Inappropriate range for the limit!");
+            console.log("Faixa inadequada para o limite!");
         }
 
         let basePath = process.cwd();
@@ -78,7 +78,7 @@ class JsonDatabase {
 
     set(key, value, autoWrite = true) {
         if (key === "" || typeof key !== "string") {
-            console.log("Unapproved key!");
+            console.log("Chave não aprovada!");
         }
 
         if (
@@ -87,15 +87,15 @@ class JsonDatabase {
             value === undefined ||
             value === null
         ) {
-            console.log("Unapproved value!");
+            console.log("Valor não aprovado!");
         }
 
         if (typeof autoWrite !== "boolean") {
-            console.log("autoWrite parameter must be true or false!");
+            console.log("O parâmetro autoWrite deve ser verdadeiro ou falso!");
         }
 
         if (typeof this.maxDataSize === "number" && this.size >= this.maxDataSize) {
-            console.log("Data limit exceeded!");
+            console.log("Limite de dados excedido!");
         }
 
         const jsonData = this.toJSON();
@@ -111,7 +111,7 @@ class JsonDatabase {
 
     get(key, defaultValue = null) {
         if (key === "" || typeof key !== "string") {
-            console.log("Unapproved key!");
+            console.log("Chave não aprovada!");
         }
 
         const jsonData = this.toJSON();
@@ -134,7 +134,7 @@ class JsonDatabase {
 
     all(limit = 0) {
         if (typeof limit !== "number") {
-            console.log("Must be of limit number type!");
+            console.log("Deve ser do tipo de número limite!");
         }
 
         const jsonData = JSON.parse(readFileSync(this.path, "utf-8"));
@@ -166,11 +166,11 @@ class JsonDatabase {
 
     delete(key, autoWrite = true) {
         if (key === "" || typeof key !== "string") {
-            console.log("Unapproved key!");
+            console.log("Chave não aprovada!");
         }
 
         if (typeof autoWrite !== "boolean") {
-            console.log("autoWrite parameter must be true or false!");
+            console.log("O parâmetro autoWrite deve ser verdadeiro ou falso!");
         }
 
         const jsonData = this.toJSON();
@@ -197,9 +197,9 @@ class JsonDatabase {
     pull(key, callbackfn, multiple = false, thisArg) {
         let data = this.get(key);
         if (!data) return false;
-        if (!Array.isArray(data)) console.log(`${key} It is not a data string with an ID.`);
+        if (!Array.isArray(data)) console.log(`${key} Não é uma string de dados com um ID.`);
         if (typeof multiple !== "boolean") {
-            console.log("multiple parameter must be true or false!");
+            console.log("vários parâmetros devem ser verdadeiros ou falsos!");
         }
         if (thisArg) callbackfn = callbackfn.bind(thisArg);
 
@@ -236,19 +236,19 @@ class JsonDatabase {
     math(key, operator, value, goToNegative = false) {
         
         if (Array.isArray(value) || isNaN(value)) {
-            console.log(`The type of value is not a number.`);
+            console.log(`O tipo de valor não é um número.`);
         }
 
-        if (value <= 0) console.log(`Value cannot be less than 1.`);
+        if (value <= 0) console.log(`O valor não pode ser menor que 1.`);
         value = Number(value);
-        if (typeof goToNegative !== "boolean") console.log(`The goToNegative parameter must be of boolean type.`);
+        if (typeof goToNegative !== "boolean") console.log(`O parâmetro goToNegative deve ser do tipo booleano.`);
         let data = this.get(key);
         if (!data) {
         
             return this.set(key, value);
         }
     
-        if (Array.isArray(data) || isNaN(data)) console.log(`${key} ID data is not a number type data.`);
+        if (Array.isArray(data) || isNaN(data)) console.log(`${key} Os dados de ID não são dados do tipo numérico.`);
 
     
         data = Number(data);
